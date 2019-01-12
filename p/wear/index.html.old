@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0041)https://engineering.purdue.edu/~zhan2308/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+        <meta http-equiv="Content-Language" content="zh-cn">
+            
+                <title>Wearable OS</title>
+    </head>
+    <body>
+
+
+    <h1 align="center">Understanding the Characteristics of Android Wear OS</h1>
+
+    <hr>
+
+    <h2 style="margin-left: 40px;">Overview</h2>
+    <blockquote>
+        <blockquote>
+        Interactive wearable devices bring dramatic changes to apps and hardware, leaving the operating system (OS) design in the mist. To this end, we thoroughly examine the execution efficiency of Android Wear, a popular wearable OS. 
+
+        <br>
+        <br>
+        In this project, we first characterized the behaviors of LG G Watch R operated on Android Wear. Based on the characterization results,
+        we are planning to provide some concrete solutions to eliminate them.
+
+        <br>
+        <br>
+        So far, we have characterized one of the most popular commodity wearable OSes - Android Wear. As reported in Mobisys paper, we've found multiple inefficiencies in
+        system daemons such as unexpected idle time while launching an application, excessive function usages, etc.
+
+        </blockquote>
+    </blockquote>
+        <hr>
+    <h2 style="margin-left: 40px;">Publication</h2>
+        <blockquote>
+            <ul>
+                [MobiSys16] <a href="https://engineering.purdue.edu/~liu396/">"Understanding the Characteristics of Android Wear OS," </a>Renju Liu and Felix Xiaozhu Lin, in Proc. ACM Int. Conf. Mobile Systems, Applications and Services, 2016.
+                <br>
+                [APSys15] <a href="http://dl.acm.org/citation.cfm?id=2797032">"Anatomizing System Activities on Interactive Wearable Devices," </a>Renju Liu, Lintong Jiang, Ningzhe Jiang and Felix Xiaozhu Lin, in Proc. ACM Asia-Pacific Workshop on Systems, 2015.
+                <br>
+            </ul>
+        </blockquote>
+        <hr>
+        <h2 style="margin-left: 40px;">Downloads</h2>
+        <blockquote>
+            <blockquote>
+                Download the important tools/data <a href="ftp://ftp.ecn.purdue.edu/xzl/software/wear/">here</a>. They include:
+                <br><br>
+		<ul>
+                <li>Raw trace data: the raw trace data contains the data used to generate each figure/table in the paper.
+                <br><br>
+                <li>Parsers: all the important parsing tools such as finding the interested time interval for the events.
+                <br><br>
+                <li>Customized kernel: the kernel has been modified from <a href="https://android.googlesource.com/kernel/msm/+/android-msm-lenok-3.10-lollipop-wear-release">lenok 3.10</a>(upstream) so that it can support our atrace tool (enabled suspend/resume category of ftrace) and provide monolithic time clock for tracing purpose.
+                <br><br>
+                <li>Customized traceview: the original Android traceview does not support text-view of the function calls. We modified the source code so that we can see the text view of the function calls.
+                <br><br>
+		<li>Slow-motion videos (timestamped) of benchmarks.
+		<br><br>	
+		</ul>
+            </blockquote>
+        </blockquote>
+    <h2 style="margin-left: 40px;">People</h2>
+    <blockquote>
+        <blockquote>
+        Our work is done at <a href="https://engineering.purdue.edu/~xzl/xsel/"> XSEL</a>, Purdue ECE.
+        <br>  
+        <a href="https://engineering.purdue.edu/~liu396/">Renju Liu</a> (Lead student)
+        <br>
+        <a href="https://engineering.purdue.edu/~xzl/">Felix Xiaozhu Lin</a>
+        </blockquote>
+    </blockquote>
+        <hr>
+	<h2 style="margin-left: 40px;">License</h2>
+	<p> <blockquote>
+	All the pre-existing code and data are subject to their own licenses.
+
+	All the userspace programs and kernel modules resulted from this project are under 
+	<a href="https://opensource.org/licenses/BSD-2-Clause">FreeBSD license</a>.
+	<br><br>
+	Copyright (c) 2015-2016, Purdue University
+	<br><br>
+	All rights reserved.
+	<br><br>
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions are met:
+	<br><br>
+	1. Redistributions of source code must retain the above copyright notice, this
+	   list of conditions and the following disclaimer. 	<br>
+	2. Redistributions in binary form must reproduce the above copyright notice,
+	   this list of conditions and the following disclaimer in the documentation
+	   and/or other materials provided with the distribution. 
+	<br><br>
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+	DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+	ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+	LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+	ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+	<br><br>
+	The views and conclusions contained in the software and documentation are those
+	of the authors and should not be interpreted as representing official policies,
+	either expressed or implied, of Purdue University.
+	</p> </blockquote>
+        <hr>
+    <blockquote>
+        <blockquote>
+            Update history: 2016.5 (xzl); 2016.4 (Renju Liu).
+        </blockquote>
+    </blockquote>
+        <hr>
+    
+<iframe frameborder="0" scrolling="no" style="border: 0px; display: none; background-color: transparent;"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:false,&quot;tsbc&quot;:true,&quot;pun&quot;:false,&quot;mk&quot;:false,&quot;ss&quot;:true}" style="display: none;"></div></body></html>

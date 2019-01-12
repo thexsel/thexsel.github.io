@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>Dandelion</title>
+  <link rel="stylesheet" type="text/css" href="my.css">
+  <style type="text/css">
+<!--
+body {
+margin: 0px 15% 4em 15%;
+background-color:white;
+color:black;
+font-family: sans-serif;
+}
+ul.spaced {
+margin: 0px 0px 2em 0px;
+}
+ul.spaced > li {
+margin: 1em 0px;
+}
+#title {
+//font-size: xx-large;
+font-size: 450%;
+font-weight: bold;
+}
+ .title {
+color: #551a8b;
+}
+//-->
+  </style>
+</head>
+<body>
+
+<img src="dandelion.jpg" alt="Dandelion">
+<br>
+Photo courtesy: <a href="http://www.free-photo-gallery.org/photos/dandelion-seed/">free-photo-gallery</a>
+&nbsp;     
+&nbsp;     
+&nbsp;     
+&nbsp;     
+&nbsp;     
+&nbsp;     
+&nbsp;     
+&nbsp;     
+<a href="http://www.azoft.com/people/seremina/edu/dandel-rom.html">
+Romanian Translation</a> courtesy: <a href="http://www.azoft.com/">azoft</a>
+
+<div id="title"> Dandelion </div>
+
+<p>Dandelion is a programming framework of phone-centered body sensor
+applications. It enables phone developers transparently write body
+sensor
+applications, without learning how to program sensors. <br>
+<br>
+Many innovative mobile health applications can be enabled by augmenting
+wireless body sensors to mobile phones, e.g. monitoring personal
+fitness with
+on-body accelerometer and EKG sensors. However, it is difficult for the
+majority of smartphone developers to program wireless body sensors
+directly;
+current sensor nodes require developers to master node-level
+programming,
+implement the communication between the smartphone and sensors, and
+even learn
+new languages. The large gap between existing programming styles for
+smartphones and sensors prevents body sensors from being widely adopted
+by
+smartphone applications, despite the burgeoning Apple App Store and
+Android
+Market. <br>
+<br>
+To bridge this programming gap, we present Dandelion, a novel framework
+for
+developing wireless body sensor applications on smartphones. Dandelion
+provides
+three major benefits: 1) platform-agnostic programming abstraction for
+in-sensor data processing, called senselet, 2) transparent integration
+of
+senselets and the smartphone code, and 3) platform-independent
+development and
+distribution of senselets. <br>
+<br>
+We provide an implementation of Dandelion on the Maemo Linux smartphone
+platform and the Rice Orbit body sensor platform. We evaluate Dandelion
+by
+implementing real-world applications, and show that Dandelion
+effectively
+eliminates the programming gap and significantly reduces the
+development
+efforts. We further show that Dandelion incurs a very small overhead;
+in total
+less than 5% of the memory capacity and less than 3% of the processor
+time of a
+typical ultra low power sensor.</p>
+
+<hr>
+
+<div class="cat" style="margin-left: 0em;">Motivation<br>
+</div>
+<p style="text-align: center;"><img style="width: 600px; height: 344px;"
+ alt="benefits" src="benefits.png"></p>
+<p> <br>
+The figure above shows our motivation to design Dandelion. <br>
+<br>
+While treating sensors as dumb suppliers is easy to smartphone
+developers, it incurs high energy overhead (frequently wake up the
+phone's processor, transfer the raw data over the wireless link, etc.).
+Directly programming both sensors and the phone ensures the
+energy-efficiency, however it is very difficult for phone developers to
+manage. In addition, computing fixed features in sensors does not offer full programmability
+of in-sensor processing.</p>
+<p>By enabling transparently developing sensor body applications,
+Dandelion seeks to achieve both the energy-effiency and the ease-of-programming.<br>
+</p>
+
+<p> <i>Please refer to our Wireless Health '10 paper for more technical details. </i></p>
+<hr>
+
+<div class="cat">Prototype</div>
+
+<p style="text-align: center;"><img
+ alt="prototype" src="prototype.png"></p>
+ 
+<p>
+We build Dandelion prototype based on Nokia N900 smartphone and 
+Rice Orbit sensor platform. 
+We are working to make Dandelion codebase publicly available. 
+</p>
+
+<hr>
+<div class="cat" style="margin-left: 0em;">People</div>
+<br>
+<ul class="people">
+  <li><a href="http://www.cs.rice.edu/%7Exl6">Felix Xiaozhu Lin</a><br>
+  </li>
+  <li><a href="http://ahmad.rahmati.com/">Ahmad Rahmati</a><br>
+  </li>
+  <li><a href="http://www.ruf.rice.edu/%7Elzhong/">Prof. Lin Zhong</a><br>
+  </li>
+</ul>
+<p></p>
+<div class="cat">
+Publications</div>
+
+                <!-- ============== PUBLICATION LIST: DANDELION
+                ====------------- -->
+                <ul>
+                    <li>
+                        <span style="color: black;">
+                            "Dandelion: A Framework for Transparently Programming Phone-Centered Wireless Body Sensor Applications for Health," 
+                            Felix Xiaozhu Lin, Ahmad Rahmati, and Lin Zhong, 
+                            in <i>Proc. ACM Wireless Health</i>, 
+                            October 2010. 
+                            <a href="http://www.ruf.rice.edu/%7Emobile/publications/lin10wirelesshealth.pdf">[pdf]</a>
+                            <a href="dandelion-talk-publish.pdf">[slides]</a>.
+                        </span> 
+                    </li>
+                    <br>
+                </ul>
+                <!-- ============== END PUBLICATION LIST: DANDELION
+                ====------------- -->
+
+<hr>
+
+<div
+ style="text-align: center; font-size: large; color: blue; font-weight: bold;"><a
+ href="http://www.recg.org">Rice Efficient Computing Group</a> 2010 </div>
+</body>
+</html>

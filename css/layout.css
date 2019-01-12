@@ -1,0 +1,171 @@
+/* xzl: for navigation bar, see
+   http://www.w3schools.com/css/css_navbar.asp */
+
+html, body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: #FFFFFF;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+/* xzl: the caption/header */
+h1 {
+    color: #000000;
+}
+
+/* xzl: the background div of the nav bar */
+#cont {
+    margin: 0 auto 0 auto;
+    border: 0;
+    padding: 0;
+    width: 54em;
+    background: #FFFFFF;
+}
+
+/* xzl: the side panel -- nav bar */
+#nav {
+    width: 12em;
+    padding: 2em 0 2em 0;
+    float: left;
+    background: #FFFFFF;
+}
+
+/* xzl: the main "content" of a page */
+#content {
+    width: 40em;
+    border: 0;
+    padding: 0.6em;
+    float: right;
+    background: #FFFFFF;
+}
+
+#foot {
+    clear: both;
+    color: black;
+    padding: 0.5em 0.5em 0.5em 12.5em;
+    background: #D8D9DF;
+}
+
+#foot p {
+    text-align: center;
+}
+
+#nav ul {
+    list-style: none;
+    margin: 0;
+    /* padding: 0; */
+    padding: 20px 1px 4px 10px;
+}
+
+#nav li {
+    list-style: none;
+    margin: 0;
+}
+
+/* xzl: if want to make the nav bar horizontal ...
+todo: need to remove the #cont div from template
+also see: http://www.webcodegeeks.com/html5/html5-navigation-bar-example/
+*/
+/*
+#nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+*/
+
+#nav li a:before {
+    /* xzl: the "arrows" before each nav button */
+    /* content: "\0020 \0020 \0020 \00BB \0020"; */
+}
+
+/* xzl: the style of the 1st level nav "buttons" */
+#nav ul a {
+    display: block;
+    margin: 0;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: #FFFFFF;
+    padding: 4px 1px 4px 10px;
+    background: #FFFFFF;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* xzl: the effect of the hover button */
+#nav li a:hover {
+    /* background: #000000;
+    color: #FFFFFF;  */
+    border-color: #FF5A06;
+}
+
+/* xzl: the style of the 2nd level nav "buttons" */
+#nav ul ul a {
+    background: #A7A9AC;
+    font-size: 80%;
+}
+
+.listingblock {
+    margin: 0;
+    background: #D2D2D2;
+    border: solid #BBBBBB 1px;
+    padding: 0 0.5em 0 0.5em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+/* xzl: the following is copied from any .html directly outputed by asciidoc */
+
+span.aqua { color: aqua; }
+span.black { color: black; }
+span.blue { color: blue; }
+span.fuchsia { color: fuchsia; }
+span.gray { color: gray; }
+span.green { color: green; }
+span.lime { color: lime; }
+span.maroon { color: maroon; }
+span.navy { color: navy; }
+span.olive { color: olive; }
+span.purple { color: purple; }
+span.red { color: red; }
+span.silver { color: silver; }
+span.teal { color: teal; }
+span.white { color: white; }
+span.yellow { color: yellow; }
+
+span.aqua-background { background: aqua; }
+span.black-background { background: black; }
+span.blue-background { background: blue; }
+span.fuchsia-background { background: fuchsia; }
+span.gray-background { background: gray; }
+span.green-background { background: green; }
+span.lime-background { background: lime; }
+span.maroon-background { background: maroon; }
+span.navy-background { background: navy; }
+span.olive-background { background: olive; }
+span.purple-background { background: purple; }
+span.red-background { background: red; }
+span.silver-background { background: silver; }
+span.teal-background { background: teal; }
+span.white-background { background: white; }
+span.yellow-background { background: yellow; }
+
+span.big { font-size: 2em; }
+span.small { font-size: 0.6em; }
+
+span.underline { text-decoration: underline; }
+span.overline { text-decoration: overline; }
+span.line-through { text-decoration: line-through; }
+
+/* xzl: since each list item has its own paragraph, we try to make
+ * them more compact
+ */
+p {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+}
+
+

@@ -1,0 +1,10 @@
+#theme: jekyll-theme-minimal
+# https://pages-themes.github.io/slate/
+theme: jekyll-theme-slate
+
+logo: img/logo.png
+title: ""
+description: Xroads Systems Exploration Lab
+show_downloads: false
+github:
+  is_project_page: false

@@ -1,0 +1,38 @@
+body {
+  background-color: white;
+  //font-size: large;
+  color: black;
+  margin: 1em 5% 5em 5%;
+  //font-family: sans-serif;
+}
+a {
+  text-decoration: underline;
+  color: black;
+}
+a:hover {
+  background-color: #ffff80;
+}
+a:visited {
+  color: #5e6062;
+}
+.cat {
+  color: #002469;
+  font-size: xx-large;
+  font-weight: bold;
+}
+.subcat {
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  margin: 1em 0px .2em 0px;
+}
+.people {
+  font-family: sans-serif;
+  margin: 0px 0px 0px 1em;
+}
+.projects {
+  font-family: sans-serif;
+}
+#logo {
+  text-align: center;
+}

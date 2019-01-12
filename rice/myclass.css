@@ -1,0 +1,35 @@
+
+.sectiontitle {
+  border-style: solid none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 0.1em 0em;
+  color: black;
+  font-family: Arial,Helvetica,sans-serif;
+  background-color: #cccccc;
+  line-height: 0.4in;
+  font-size: 22pt;
+  font-weight: bold;
+}
+.bar {
+  font-family: "Times New Roman",Times,serif;
+  color: #ff6600;
+  font-style: italic;
+}
+*.proj {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 18pt;
+  line-height: 0.4in;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+}
+*.publink {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 10pt;
+}
+*.name {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 20pt;
+  font-weight: bold;
+}

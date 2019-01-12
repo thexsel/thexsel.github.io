@@ -1,0 +1,95 @@
+<head>
+<title> Papers</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<link rel="copyright" href="copyright.html">
+<link rel="icon" type="image/png" href="img/favicon.png" />
+
+	<style>
+		html,body {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background-color: #FFF;
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   			font-weight: 300;
+		}
+		.container {
+			width: 80%;
+			margin: 0 auto;
+		}
+		h1 > small a {
+			color: #AAA;
+			text-decoration: none;
+			font-size: 70%;
+			margin-left: 10px;
+		}
+		h1 > small a:hover {
+			color: #000;
+		}
+		.item .wrapper .item-tags {
+			color: #AAA;
+			font-size: 12px;
+			line-height: 1.5;
+		}
+		.tags-container {
+			margin: 20px 0;
+		}
+	</style>
+	
+	<link href="styles/tagsort.min.css" rel="stylesheet" type="text/css"></link>
+	<script src="scripts/jquery-2.1.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script> 
+    $(function(){
+      $("#paperlist").load("paperlist.html"); 
+    });
+    </script> 	
+	<script src="scripts/tagsort.min.js" type="text/javascript" charset="utf-8"></script>		
+	<script type="text/javascript">
+	$(function(){
+		$('div.tags-container').tagSort({items:'.item', tagElement:'span', tagClassPrefix:'tagsort-', itemTagsView:'.item-tags', itemTagsSeperator:' / ', sortType:'exclusive', fadeTime: 0});
+	});
+	</script>
+
+</head>
+<body>
+<div id="cont">
+
+<div id="nav">
+<center><img src="img/logo.png" alt="logo"></center>
+<ul>
+<li>
+<p>
+<a href="index.html">Home</a>
+</p>
+</li>
+<!-----
+<li>
+<p>
+<a href="papers.html">Pub</a>
+</p>
+</li>
+<li>
+<p>
+<a href="ack.html">Ack</a>
+</p>
+</li>
+---->
+</ul>
+</div>
+
+<div id="content">
+<hr>
+<p><span class="medium">Click one or more tags below to filter papers</span></p>
+<div class="tags-container row"></div>
+
+<!--- xzl: I can't get it to work... seem to conflict with tagsort --->
+<div id="paperlist"></div>
+
+<div id="foot">
+<p>That's it!</p>
+</div>
+
+</div>
+</body></html>

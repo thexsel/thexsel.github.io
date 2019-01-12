@@ -1,0 +1,36 @@
+Felix Xiaozhu Lin
+-----------------
+
+I was a PhD student at Rice CS during 2008.8-2014.7. 
+I was part of link:http://recg.org[RECG]. 
+I have moved to Purdue ECE and my new page is 
+link:http://www.felixlin.org[here].
+
+Cover letter template for Rice students
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sample output:
+
+link:https://bitbucket.org/fxlin/rice-cover-letter/downloads/intel.pdf[for corps]
+and 
+link:https://bitbucket.org/fxlin/rice-cover-letter/downloads/sample-univ.pdf[for schools].
+
+To obtain:
+----
+  git clone git@bitbucket.org:fxlin/rice-cover-letter.git
+----
+
+The LATEX format files for RECG
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+See link:http://www.cs.rice.edu/~xl6/recg-latex-kit/README.html[here].
+
+To obtain:
+----
+git clone https://code.google.com/p/recg-latex-kit
+----
+
+[small]#This page is generated with asciidoc. See source code link:./index.txt[here].#
+
+
+
+
+

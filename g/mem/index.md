@@ -34,3 +34,11 @@ Lead Unit: College of W&M.
 [StreamBox](https://xsel.rocks/p/streambox) -- **Stream processing at the memory speed**. 
 
 Lead Unit: Purdue. 
+
+
+## One slide for our lessons in exploiting 3D memory: 
+![alt text][guide]
+
+[guide]: https://thexsel.github.io/g/mem/guide.png "Guide"
+
+

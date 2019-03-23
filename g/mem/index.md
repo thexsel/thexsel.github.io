@@ -1,6 +1,8 @@
 # Efficient Exploitation of Heterogeneous Memory through OS/Compiler Support 
 
-This web page summarizes the publications and deliverables for NSF Award 1619075 and 1618620. (Time: Sept 2016 – Sept 2019)
+This web page summarizes the outcome of NSF Award 1619075 and 1618620, a collaborative project between Purdue University and College of William & Mary. 
+
+Project duration: Sept 2016 –- Sept 2019.
 
 ## Overview
 
@@ -25,6 +27,10 @@ Shasha Wen, Lucy Cherkasova, Felix Xiaozhu Lin, Xu Liu, "ProfDP: A Lightweight P
 
 ## Software deliverables
 
-[ProfDP](http://www.cs.wm.edu/~xl10/profdp.html) **A Novel Differential, Data-centric Profiler tyat Guides Data Placement in Heterogeneous Memory Systems** Lead Unit: College of W&M. 
+[ProfDP](http://www.cs.wm.edu/~xl10/profdp.html) -- **A Novel Differential, Data-centric Profiler that Guides Data Placement in Heterogeneous Memory Systems** 
 
-[StreamBox](https://xsel.rocks/p/streambox) **Stream processing at the memory speed**. Lead Unit: Purdue
+Lead Unit: College of W&M. 
+
+[StreamBox](https://xsel.rocks/p/streambox) -- **Stream processing at the memory speed**. 
+
+Lead Unit: Purdue. 

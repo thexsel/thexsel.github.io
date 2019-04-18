@@ -5,7 +5,7 @@
 <meta name="generator" content="AsciiDoc 8.6.9">
 <meta name="description" content="todo line1 todo line2">
 <meta name="keywords" content="">
-<title>StreamBox: Modern Stream Processing on a Multicore Machine</title>
+<title>StreamBox: A Stream Engine at Memory Speed</title>
 <style type="text/css">
 /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
 
@@ -768,7 +768,7 @@ asciidoc.install(2);
 </head>
 <body class="article">
 <div id="header">
-<h1>StreamBox: Modern Stream Processing on a Multicore Machine</h1>
+<h1>StreamBox: A Stream Engine at Memory Speed</h1>
 <div id="toc">
   <div id="toctitle">Table of Contents</div>
   <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
@@ -778,8 +778,10 @@ asciidoc.install(2);
 <div class="sect1">
 <h2 id="_overview">Overview</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>Stream analytics on real-time events has an insatiable demand for throughput and latency. Its performance on a single machine is central to meeting this demand, even in a distributed system. StreamBox is a novel stream processing engine that:</p></div>
-<div class="ulist"><ul>
+<div class="paragraph"><p>Stream analytics on real-time events has an insatiable demand for high throughput and low latency. StreamBox is a novel stream processing engine optimized for multicore and hybrid memory.</p></div>
+<div class="sect2">
+<h3 id="_streambox_on_a_multicore_machine">StreamBox on a multicore machine</h3>
+<div class="olist arabic"><ol class="arabic">
 <li>
 <p>
 Exploits the parallelism and memory hierarchies in modern multicore hardware
@@ -797,15 +799,46 @@ Scales to a large number (56) of cores
 </li>
 <li>
 <p>
-Achieves throughput on a par with distributed engines on medium-size clusters.
+Achieves throughput on a par with distributed engines on medium-size clusters
 </p>
 </li>
 <li>
 <p>
-Delivers latencies of the tens of milliseconds, which are 20× shorter than popular distributed streaming engines.
+Delivers latencies of the tens of milliseconds, which are 20× shorter than popular distributed streaming engines
 </p>
 </li>
-</ul></div>
+</ol></div>
+</div>
+<div class="sect2">
+<h3 id="_streambox_on_high_bandwidth_hybrid_memory">StreamBox on high bandwidth hybrid memory</h3>
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+Exploits the emerging hybrid memories combining commodity DDR4 DRAM and 3D-stacked DRAM
+</p>
+</li>
+<li>
+<p>
+Replaces Hash with Sort using high task parallelism, wide SIMD (AVX-512), and sequential memory access to harness abundant bandwidth of 3D-stacked DRAM
+</p>
+</li>
+<li>
+<p>
+Dynamically extracts Key Pointer Aarry (KPA) from full records on DRAM to 3D-stacked DRAM to minimize the use of the precious capacity
+</p>
+</li>
+<li>
+<p>
+Dynamically manages KPA placement based on both 3D-stacked DRAM’s high bandwidth and limited capacity, and normal DRAM’s high capacity and limited bandwidth
+</p>
+</li>
+<li>
+<p>
+Achieves the best reported records per second for streaming with ingress on a single machine (Intel Knights Landing)
+</p>
+</li>
+</ol></div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -814,28 +847,37 @@ Delivers latencies of the tens of milliseconds, which are 20× shorter than popu
 <div class="ulist"><ul>
 <li>
 <p>
-[<strong>ATC&#8217;17</strong>]
+[<strong>USENIX ATC&#8217;17</strong>]
   "<a href="http://xsel.rocks/papers/atc17.pdf">StreamBox: Modern Stream Processing on a Multicore Machine</a>,"
   Hongyu Miao, Heejin Park, Myeongjae Jeon, Gennady Pekhimenko, Kathryn S. McKinley, and Felix Xiaozhu Lin,
-  in <em>Proc. USENIX Annual Technical Conference</em>,
-  2017.
+  in <em>Proc. of USENIX Annual Technical Conference</em>,
+  July 2017.
+</p>
+</li>
+<li>
+<p>
+[<strong>ASPLOS&#8217;19</strong>]
+  "<a href="https://arxiv.org/abs/1901.01328">StreamBox-HBM: Stream Analytics on High Bandwidth Hybrid Memory</a>,"
+  Hongyu Miao, Myeongjae Jeon, Gennady Pekhimenko, Kathryn S. McKinley, and Felix Xiaozhu Lin,
+  in <em>Proc. of the 24th ACM International Conference on Architectural Support for Programming Languages and Operating Systems</em>,
+  April 2019.
 </p>
 </li>
 </ul></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_source_code">Source code</h2>
+<h2 id="_source_code_on_a_multicore_machine">Source Code on a Multicore Machine</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_where">Where</h3>
 <div class="listingblock">
 <div class="content monospaced">
 <pre>wget ftp://ftp.ecn.purdue.edu/xzl/software/streambox/streambox-last.tar.gz</pre>
 </div></div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_build_amp_run">Build &amp; Run</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_build_amp_run">Build &amp; Run</h3>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -907,10 +949,27 @@ Run an application
 </div></div>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_source_code_on_intel_knights_landing_with_hybrid_memory">Source Code on Intel Knights Landing with Hybrid Memory</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_where_2">Where</h3>
+<div class="listingblock">
+<div class="content monospaced">
+<pre>wget ftp://ftp.ecn.purdue.edu/xzl/software/streambox/streambox-knl.tar.gz</pre>
+</div></div>
+</div>
+<div class="sect2">
+<h3 id="_build_amp_run_2">Build &amp; Run</h3>
+<div class="paragraph"><p>Please check out the HOW_TO_RUN_BENCHMARKS in source code for detailed instructions on how to compile and run all benchmarks.</p></div>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_acknowledgement">Acknowledgement</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>This work was supported in part by NSF Award #1619075 and by a Google Faculty Award.</p></div>
+<div class="paragraph"><p>This work was supported in part by NSF Award #1718702, NSF Award #1619075, and a Google Faculty Award. Development software was donated by Intel and JetBrains.</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -936,18 +995,13 @@ PhD students
 </ul></div>
 </dd>
 <dt class="hdlist1">
-Faculty and Researchers
+Faculty and Researcher
 </dt>
 <dd>
 <div class="ulist"><ul>
 <li>
 <p>
-<a href="https://www.microsoft.com/en-us/research/people/genpek/">Gennady Pekhimenko</a>, Microsoft Research
-</p>
-</li>
-<li>
-<p>
-<a href="https://www.microsoft.com/en-us/research/people/myeoje/">Myeongjae Jeon</a>, Microsoft Research
+<a href="http://felixlin.org">Felix Xiaozhu Lin</a>, Purdue ECE
 </p>
 </li>
 <li>
@@ -957,7 +1011,12 @@ Faculty and Researchers
 </li>
 <li>
 <p>
-<a href="http://felixlin.org">Felix Xiaozhu Lin</a>, Purdue ECE
+<a href="https://sites.google.com/site/myeongjae/">Myeongjae Jeon</a>, Ulsan National Institute of Science and Technology
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.cs.toronto.edu/~pekhimenko/">Gennady Pekhimenko</a>, University of Toronto
 </p>
 </li>
 </ul></div>
@@ -970,7 +1029,7 @@ Faculty and Researchers
 <div class="sectionbody">
 <div class="paragraph"><p><strong>All the pre-existing code and data are subject to their own licenses. All the userspace programs and kernel modules resulted from this project are under
 <a href="https://opensource.org/licenses/BSD-2-Clause">FreeBSD license</a></strong>.</p></div>
-<div class="paragraph"><p>Copyright (c) 2016-2017, Purdue University</p></div>
+<div class="paragraph"><p>Copyright (c) 2016-2019, Purdue University</p></div>
 <div class="paragraph"><p>All rights reserved.</p></div>
 <div class="paragraph"><p>Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:</p></div>
@@ -1002,14 +1061,15 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p></div>
 <div class="paragraph"><p>The views and conclusions contained in the software and documentation are those
 of the authors and should not be interpreted as representing official policies,
 either expressed or implied, of Purdue University.</p></div>
-<div class="paragraph"><p><span class="small">This page is generated with asciidoc on 2017-07-21. [ <a href="index.adoc">source</a> <a href="file:///data/xzl/Dropbox/private/drafts/PUBLISHED/streambox/docs/index.adoc">rawlink</a> ]</span></p></div>
+<div class="paragraph"><p><span class="small">This page is generated with asciidoc on 2019-04-01. [ <a href="index.adoc">source</a> <a href="file:///home/miaohy/Papers/knl-stream/docs/index.adoc">rawlink</a> ]</span></p></div>
 </div>
 </div>
 </div>
 <div id="footnotes"><hr></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-07-21 13:03:10 EDT
+Last updated
+ 2019-04-01 22:35:34 EDT
 </div>
 </div>
 </body>

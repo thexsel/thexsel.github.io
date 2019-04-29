@@ -70,6 +70,9 @@ A list of recent projects:
 ---------
 ## What's up
 
+* 2019-04: NSF CAREER. The thesis is "secure by design" -- a trustworthy data plane at the cloud edge. 
+* 2019-04: StreamBox-TZ: the 3rd sequel of StreamBox, will appear at ATC'19. It describes running stream analytics at the cloud edge secured by TrustZone.
+* 2019-04: Transkernel, my favorite among all kernel projects we've done so far, to appear at ATC'19.
 * 2018-12: A data store designed for retrospective analytics over large videos. Check out our paper at Eurosys'19.
 * 2018-11: Proper use of high banwidth memory can speed up stream analytics by 7x. Check out our paper at ASPLOS'19.
 * 2018-02: Programs should learn their power consumption _in the right way_. Check out our paper at Eurosys'18.

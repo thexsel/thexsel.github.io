@@ -18,13 +18,13 @@ Tiantu Xu, Luis Materon Botelho, and Felix Xiaozhu Lin. 2019. VStore: A Data Sto
 
 ### People
 PhD Student
-* Tiantu Xu (lead), Purdue ECE
+* [Tiantu Xu](https://web.ics.purdue.edu/~xu944/) (lead), Purdue ECE
 
 Undergraduate Student
 * Luis Materon Botelho, Purdue ECE
 
 Faculty
-* Felix Xiaozhu Lin, Purdue ECE
+* [Felix Xiaozhu Lin](https://fxlin.github.io/), Purdue ECE
 
 ### License
 All the pre-existing code and data are subject to their own licenses. All the userspace programs and kernel modules resulted from this project are under [FreeBSD license](https://opensource.org/licenses/BSD-2-Clause).

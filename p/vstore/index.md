@@ -1,8 +1,11 @@
 ## <center>VStore: A Data Store for Analytics on Large Videos</center>
 
 ### Overview
-![An Overview of VStore](http://github.com/thexsel/thexsel.github.io/blob/master/p/vstore/concept-small.png)
 We present VStore, a data store for supporting fast, resource efficient analytics over large archival videos. 
+<p align="center"> 
+<img src="./concept-small.png" title="An Overview of VStore">
+</p>
+
 * VStore manages video ingestion, storage, retrieval, and consumption, and controls video formats along the video data path.
 * VStore explores an idea called backward derivation of configuration: 
 in the opposite direction along the video data path, VStore passes the video quantity and quality expected by analytics backward to retrieval, to storage, and to ingestion. 

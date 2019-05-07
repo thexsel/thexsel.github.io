@@ -2,7 +2,11 @@
 
 ### Overview
 We present VStore, a data store for supporting fast, resource efficient analytics over large archival videos.
-<img src="./concept.png" align="center" width="564" height="232">
+
+<p align="center">
+<img src="./concept.png" width="564" height="232">
+</p>
+
 * VStore manages video ingestion, storage, retrieval, and consumption, and controls video formats along the video data path.
 * VStore explores an idea called backward derivation of configuration:
 in the opposite direction along the video data path, VStore passes the video quantity and quality expected by analytics backward to retrieval, to storage, and to ingestion.

@@ -3,7 +3,7 @@
 ### Overview
 We present VStore, a data store for supporting fast, resource efficient analytics over large archival videos.
 <p align="center">
-<img src="./concept.png" title="An Overview of VStore">
+<img src="./concept-transparent.png" title="An Overview of VStore">
 </p>
 
 * VStore manages video ingestion, storage, retrieval, and consumption, and controls video formats along the video data path.

@@ -1,19 +1,25 @@
-## <center>VStore: A Data Store for Analytics on Large Videos</center>
+## <center>VStore: A Video Store for AI </center>
 
 ### Overview
-We present VStore, a data store for supporting fast, resource efficient analytics over large archival videos.
+VStore is a data store for supporting fast, resource-efficient analytics over large archival videos.
+Catering to analytics, VStore manages the whole life cycle of videos -- ingestion, storage, retrieval, and consumption. See the figure above. 
+
+Why we need another video store, given that we already have a lot, e.g. those for YouTube and Netflix? Yet, these existing stores are for *human consumers*. They are not for *algorithmic consumers* (AI), which watch videos in a way very different from humans. 
 
 <p align="center">
 <img src="./concept.png" width="564" height="232">
 </p>
 
-* VStore manages video ingestion, storage, retrieval, and consumption, and controls video formats along the video data path.
-* VStore explores an idea called backward derivation of configuration:
-in the opposite direction along the video data path, VStore passes the video quantity and quality expected by analytics backward to retrieval, to storage, and to ingestion.
-* In this process, VStore automatically derives an optimal set of video formats, optimizing for different resources in a progressive manner.
-* In response to queries, VStore selects video formats catering to the executed operators and the target accuracy.
-It streams video data from disks through decoder to operators.
-It runs queries as fast as 362× of video realtime.
+
+VStore's central design concern: to configure video formats to respect AI's accuracy while maximizing resource efficiency. It is difficult -- the configuration space is enormous! 
+
+VStore therefore builds on an idea called **backward derivation of configuration**: in the opposite direction along the video data path, VStore passes the video quantity and quality expected by analytics backward to retrieval, to storage, and to ingestion. In this process, VStore automatically derives an optimal set of video formats, optimizing for different resources in a progressive manner. See the figure above. 
+
+As a query comes in, VStore selects video formats catering to the executed operators and the target accuracy. It streams video data from disks through decoder to operators. 
+
+On our commodity Xeon server, it runs queries as fast as 362x of video realtime.
+
+Read our paper for more details. 
 
 ### Related Publication
 **[EuroSys '19]**

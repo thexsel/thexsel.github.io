@@ -42,7 +42,7 @@ Faculty
 
 ### License
 All the pre-existing code and data are subject to their own licenses. All the userspace programs and kernel modules resulted from this project are under [FreeBSD license](https://opensource.org/licenses/BSD-2-Clause).
-Copyright (c) 2017-2018, Purdue University
+Copyright (c) 2018-2019, Purdue University
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:

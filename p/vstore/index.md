@@ -2,13 +2,15 @@
 
 ### Overview
 VStore is a data store for supporting fast, resource-efficient analytics over large archival videos.
-Catering to analytics, VStore manages the whole life cycle of videos -- ingestion, storage, retrieval, and consumption. See the figure above. 
-
-Why we need another video store, given that we already have a lot, e.g. those for YouTube and Netflix? Yet, these existing stores are for *human consumers*. They are not for *algorithmic consumers* (AI), which watch videos in a way very different from humans. 
+Catering to analytics, VStore manages the whole life cycle of videos -- ingestion, storage, retrieval, and consumption. See the figure below. 
 
 <p align="center">
 <img src="./concept.png" width="564" height="232">
 </p>
+
+
+Why we need another video store, given that we already have a lot, e.g. those for YouTube and Netflix? Yet, these existing stores are for *human consumers*. They are not for *algorithmic consumers* (AI), which watch videos in a way very different from humans. 
+
 
 
 VStore's central design concern: to configure video formats to respect AI's accuracy while maximizing resource efficiency. It is difficult -- the configuration space is enormous! 

@@ -28,7 +28,7 @@ Read our paper for more details.
 Tiantu Xu, Luis Materon Botelho, and Felix Xiaozhu Lin. VStore: A Data Store for Analytics on Large Videos. In Proceedings of the Fourteenth EuroSys Conference 2019 (EuroSys'19). ACM, New York, NY, USA, Article 16, 17 pages. DOI: https://doi.org/10.1145/3302424.3303971
 
 ### Source Code
-[Download](https://github.com/tiantuxu/VStore)
+[Download](ftp://ftp.ecn.purdue.edu/xzl/software/vstore/)
 
 ### People
 PhD Student

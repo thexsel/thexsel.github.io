@@ -68,7 +68,8 @@ A list of recent projects:
 [Dandelion](rice/dandelion/index.html)
 
 Pages for NSF projects (with fun stuffs): 
-[CNS#1619075](g/mem/)
+[CNS#1619075](g/mem/) |
+[SaTC#1718702](g/mobileui/)
 
 ---------
 ## What's up

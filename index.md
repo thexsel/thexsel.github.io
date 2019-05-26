@@ -67,6 +67,9 @@ A list of recent projects:
 [RhythmLink](rice/rhythmlink/rhythmlink.html) |
 [Dandelion](rice/dandelion/index.html)
 
+Pages for NSF projects (with fun stuffs): 
+[CNS#1619075](g/mem.html)
+
 ---------
 ## What's up
 

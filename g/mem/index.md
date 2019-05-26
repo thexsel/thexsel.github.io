@@ -47,8 +47,12 @@ Lead Unit: College of W&M.
 
 Lead Unit: Purdue. 
 
+[VStore](https://thexsel.github.io/p/vstore/) -- **A video store for AI**
 
-## One slide for our lessons in exploiting 3D memory: 
+Lead Unit: Purdue. 
+
+
+## Our experiences with 3D memory, in one slide: 
 ![alt text][guide]
 
 [guide]: https://thexsel.github.io/g/mem/guide.png "Guide"

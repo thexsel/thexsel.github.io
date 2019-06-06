@@ -776,26 +776,28 @@ asciidoc.install(2);
 <div class="sect1">
 <h2 id="_overview">Overview</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>We introduce a new OS principal called power sandbox, which enables one app to observe the fine-grained power consumption of itself running in its vertical slice of the hardware/software stack.</p></div>
+<div class="paragraph"><p>
+Transkernel is a novel OS model for heterogeneous multi-processors, which combines DBT and emulation for bridging ISA gaps and for catering to core asymmetry, respectively.
+</p></div>
 <div class="ulist"><ul>
 <li>
 <p>
-We present an analysis of existing approaches to app power awareness, demonstrate the inadequacies, and identify the cause as power entanglement rooted in OS resource multiplexing. In response, we present a novel OS principal called power sandbox that allows an app to observe the power of itself and its vertical environment.
+  a
 </p>
 </li>
 <li>
 <p>
-We enforce psbox through two lightweight kernel extensions: resource ballooning and power state virtualization.
+  b
 </p>
 </li>
 <li>
 <p>
-We confine the psbox performance cost to the sandboxed app with two techniques: tracking and charging lost sharing opportunities and encapsulating resource balllons as normal scheduling entities.
+  c
 </p>
 </li>
 <li>
 <p>
-On top of the Linux kernel v4.4, we implement psbox for CPU, GPU, DSP, and WiFi interface, without disruptive kernel overhaul. Our evaluation shows that psbox reliably insulates power impacts, incurs minor cost, maintains fairness, and facilitates the construction of power-aware apps.
+  c
 </p>
 </li>
 </ul></div>

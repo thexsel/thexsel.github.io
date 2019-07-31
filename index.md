@@ -52,6 +52,7 @@ novel OS structures ([1](http://www.k2os.org/), [2](p/psbox/index.html)),
 [user-level runtime design](p/streambox/).
 
 A list of recent projects:
+[Transkernel](p/transkernel/index.html) |
 [VStore](p/vstore/index.md) |
 [Power Sandbox](p/psbox/index.html) |
 [_StreamBox_](p/streambox/index.html) |
@@ -68,7 +69,8 @@ A list of recent projects:
 [Dandelion](rice/dandelion/index.html)
 
 Pages for NSF projects (with fun stuffs): 
-[CNS#1619075](g/mem/)
+[CNS#1619075](g/mem/) |
+[SaTC#1718702](g/mobileui/)
 
 ---------
 ## What's up

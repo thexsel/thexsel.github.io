@@ -52,6 +52,7 @@ novel OS structures ([1](http://www.k2os.org/), [2](p/psbox/index.html)),
 [user-level runtime design](p/streambox/).
 
 A list of recent projects:
+[Elf (a 3-min video)] (https://www.youtube.com/watch?v=x2z_pm3FiD0) | 
 [Transkernel](p/transkernel/index.html) |
 [VStore](p/vstore/index.md) |
 [Power Sandbox](p/psbox/index.html) |

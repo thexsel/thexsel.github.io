@@ -18,7 +18,7 @@ Head Dreamer: [Felix Xiaozhu Lin](http://felixlin.org/)
 
 ### Dreamers towards PhD: 
 [Hongyu Miao](https://engineering.purdue.edu/~miaoh) |
-[Heejin Park](http://web.ics.purdue.edu/~bakhi) |
+[Heejin Park](https://bakhi.github.io) |
 [Liwei Guo](http://zaxguo.github.io) |
 [Tiantu Xu](http://web.ics.purdue.edu/~xu944) |
 [Mengwei Xu (a PKU visitor)](https://xumengwei.github.io/)

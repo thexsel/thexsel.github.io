@@ -1,15 +1,11 @@
-You've just found XSEL! We are a small research group at Purdue University. 
-We strive to build computer systems software that is relevant, cool, and publishable. 
+You've just found XSEL! We are a small research group at University of Virginia. 
+We strive to build computer systems software that is cool. 
 
 **[Recent publications](papers.html)**
-
-Lab: EE341  Tel: 765-49-68227 
 
 <!--- 
 Applyling for PhD program in '18? Check here.
 --->
-
-To PhD applicants: [Why Purdue Computer Engineering](https://engineering.purdue.edu/ComputerEngineering/)?
 
 ----
 ## Who we are
@@ -17,21 +13,24 @@ To PhD applicants: [Why Purdue Computer Engineering](https://engineering.purdue.
 Head Dreamer: [Felix Xiaozhu Lin](http://felixlin.org/)
 
 ### Dreamers towards PhD: 
-[Hongyu Miao](https://engineering.purdue.edu/~miaoh) |
-[Heejin Park](https://bakhi.github.io) |
 [Liwei Guo](http://zaxguo.github.io) |
-[Tiantu Xu](http://web.ics.purdue.edu/~xu944) |
-[Mengwei Xu (a PKU visitor)](https://xumengwei.github.io/)
+[Arup Sarker]() |
+[Madellyne Waugh]()
 
+<!-----
 ### MS (w/ thesis):
-[Shuang Zhai](http://web.ics.purdue.edu/~zhais/)
+----->
 
 ### Alumni:
+Hongyu Miao (PhD'21; thesis "Systems Support for Data Analytics by Exploiting Modern Hardware", first job: NVIDIA) 
+Heejin Park (PhD'21; thesis "Towards Trustworthy On-device Computation", first job: TBA) 
+Tiantu Xu (PhD'21; thesis "Software Systems for Large-scale Retrospective Video Analytics", first job: Facebook) 
 Xiangyu Li (BS'16; now graduate student at Gatech);
 Michael Glapa (MS'18; first job: FWDNXT);
 Ravi Gupta (MS'16; first job: Intel);
 Raiyan Latif (MS'16; first job: Intel);
 Lintong Jiang (MS'16; first job: VMWare);
+Shuang Zhai (cont. graduate study at U of Rochester)
 Renju Liu (cont. graduate study at UCLA)
 
 ### Undergrad: 
@@ -51,7 +50,7 @@ novel OS structures ([1](http://www.k2os.org/), [2](p/psbox/index.html)),
 [binary translation](https://arxiv.org/abs/1811.05000), and
 [user-level runtime design](p/streambox/).
 
-A list of recent projects:
+A partial list of recent projects:
 Elf [(a 3-min video)](https://www.youtube.com/watch?v=x2z_pm3FiD0) | 
 [Transkernel](p/transkernel/index.html) |
 [VStore](p/vstore/index.md) |
@@ -73,7 +72,7 @@ Pages for NSF projects (with fun stuffs):
 [CNS#1619075](g/mem/) |
 [SaTC#1718702](g/mobileui/)
 
----------
+<!--- 
 ## What's up
 
 * 2019-04: NSF CAREER. The thesis is "secure by design" -- a trustworthy data backplane for the cloud edge. 
@@ -90,6 +89,7 @@ Pages for NSF projects (with fun stuffs):
 * 2015-11: How to program heterogeneous memory? Read our +memif+ paper at _ASPLOS'16_.
 * 2015-06: Why is your smart watch slow? Check out our paper at _ApSys'15_.
 * 2015-01: The group receives the first NSF grant (CISE: CRII).
+---->
 
 ---------
 ## Acknowledgement

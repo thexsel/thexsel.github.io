@@ -22,16 +22,16 @@ Head Dreamer: [Felix Xiaozhu Lin](http://felixlin.org/)
 ----->
 
 ### Alumni:
-Hongyu Miao (PhD'21; thesis "Systems Support for Data Analytics by Exploiting Modern Hardware", first job: NVIDIA) 
-Heejin Park (PhD'21; thesis "Towards Trustworthy On-device Computation", first job: TBA) 
-Tiantu Xu (PhD'21; thesis "Software Systems for Large-scale Retrospective Video Analytics", first job: Facebook) 
-Xiangyu Li (BS'16; now graduate student at Gatech);
-Michael Glapa (MS'18; first job: FWDNXT);
-Ravi Gupta (MS'16; first job: Intel);
-Raiyan Latif (MS'16; first job: Intel);
-Lintong Jiang (MS'16; first job: VMWare);
-Shuang Zhai (cont. graduate study at U of Rochester)
-Renju Liu (cont. graduate study at UCLA)
+* Hongyu Miao (PhD'21; thesis "Systems Support for Data Analytics by Exploiting Modern Hardware", first job: NVIDIA) 
+* Heejin Park (PhD'21; thesis "Towards Trustworthy On-device Computation", first job: TBA) 
+* Tiantu Xu (PhD'21; thesis "Software Systems for Large-scale Retrospective Video Analytics", first job: Facebook) 
+* Xiangyu Li (BS'16; now graduate student at Gatech);
+* Michael Glapa (MS'18; first job: FWDNXT);
+* Ravi Gupta (MS'16; first job: Intel);
+* Raiyan Latif (MS'16; first job: Intel);
+* Lintong Jiang (MS'16; first job: VMWare);
+* Shuang Zhai (cont. graduate study at U of Rochester)
+* Renju Liu (cont. graduate study at UCLA)
 
 ### Undergrad: 
 Luis Fernando Materon Botelho (Summer 18); Yi Qiao (Summer 18); Victor Pan (Summer 18); Shaoying Xu (Summer 17)
